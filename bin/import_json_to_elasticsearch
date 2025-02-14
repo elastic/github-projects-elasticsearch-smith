@@ -2,7 +2,7 @@
 
 # Import an export from GitHub Projects into ES.
 
-set -eo pipefail
+set -xeo pipefail
 
 INDEX="${INDEX-github_projects_items-obs_ux_infra_services-default}"
 URL="$ELASTICSEARCH_URL/$INDEX/_bulk"
