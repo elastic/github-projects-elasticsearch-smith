@@ -2,7 +2,7 @@
 # Run the weekly scripts to get data out of GitHub and into Elasticsearch
 
 set -eo pipefail
-env
+echo $ELASTICSEARCH_URL
 #DIR=$(dirname "$0")
 
 #"$DIR"/export_from_github | "$DIR"/import_json_to_elasticsearch
